@@ -5,39 +5,39 @@ export function About() {
   const values = [
     {
       icon: Heart,
-      title: "Patient-Centered Care",
-      description: "Your comfort and well-being are at the heart of everything we do.",
+      title: "Patient-First Care",
+      description: "At True Smile Dental Clinic, our patients always come first. We focus on providing a comfortable, friendly, and stress-free dental experience while ensuring the best possible treatment outcomes.",
     },
     {
       icon: Award,
-      title: "Excellence",
-      description: "We maintain the highest standards in dental care and professional service.",
+      title: "Quality & Excellence",
+      description: "We are committed to delivering high-quality dental care using modern techniques and the highest professional standards to ensure safe and effective treatments.",
     },
     {
       icon: Users,
-      title: "Teamwork",
-      description: "Our skilled team works together to provide comprehensive care.",
+      title: "Compassion & Trust",
+      description: "We believe in building long-term relationships with our patients by treating everyone with honesty, care, and respect.",
     },
     {
       icon: Target,
-      title: "Innovation",
-      description: "We embrace the latest technology and techniques in dentistry.",
+      title: "Modern Dentistry",
+      description: "We continuously adopt advanced dental technologies and updated treatment methods to provide more accurate, comfortable, and efficient dental care.",
     },
   ];
 
   const team = [
     {
-      name: "Dr. Sarah Mitchell",
+      name: "Dr. Stela Kapoor",
       role: "General Dentist",
-      description: "15+ years of experience in comprehensive dental care.",
+      description: "10+ years of experience in dental care.",
     },
     {
-      name: "Dr. James Parker",
+      name: "Dr. Rachit Batra",
       role: "Cosmetic Dentist",
       description: "Specialist in smile makeovers and aesthetic dentistry.",
     },
     {
-      name: "Dr. Lisa Chen",
+      name: "Dr. Rekha",
       role: "Orthodontist",
       description: "Expert in braces and clear aligner treatments.",
     },
@@ -63,25 +63,21 @@ export function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl text-[#2C4964] mb-6">
-                Our Story
+                Doctor Introduction
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded in 2005, Truesmiles Dental Clinic has been serving the community
-                  with exceptional dental care for nearly two decades. What started as a
-                  small practice has grown into a comprehensive dental center, but our core
-                  values remain the same.
+                  Dr. Stela Kapoor is a specialist orthodontist with advanced training in the diagnosis and correction of dental and facial irregularities. She completed her Master’s degree in Orthodontics where she was awarded a Gold Medal for academic and clinical excellence.
                 </p>
                 <p>
-                  We believe that everyone deserves access to quality dental care in a
-                  comfortable, welcoming environment. Our team is dedicated to making each
-                  visit a positive experience, whether you're coming in for a routine
-                  cleaning or a complex procedure.
+                  With strong clinical training in both routine and complex orthodontic treatments, she is committed to delivering ethical, evidence-based dental care. Her expertise includes braces, aligner therapy, and management of complex orthodontic conditions.
                 </p>
                 <p>
-                  With state-of-the-art technology and a commitment to continuing education,
-                  we stay at the forefront of dental care to provide you with the best
-                  possible treatment options.
+                  She has also received specialized exposure to cleft lip and palate orthodontic management, allowing her to contribute to multidisciplinary care for craniofacial patients.
+                </p>
+                <p>
+                  Her vision is to make high-quality dental care accessible while maintaining the highest standards of clinical excellence.
+
                 </p>
               </div>
             </div>
@@ -104,15 +100,15 @@ export function About() {
               Our Values
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              The principles that guide our practice every day
+              The principles that guide everything we do at True Smile Dental Clinic
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#6BBE44] bg-opacity-10 rounded-full mb-4">
+                {/* <div className="inline-flex items-center justify-center w-16 h-16 bg-[#6BBE44] bg-opacity-10 rounded-full mb-4">
                   <value.icon className="text-[#6BBE44]" size={32} />
-                </div>
+                </div> */}
                 <h3 className="text-xl text-[#2C4964] mb-2">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>

@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "../../assets/Truesmiles.png";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,7 +20,10 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl text-[#2C4964]">Truesmiles</span>
+            <span className="text-2xl text-[#2C4964]">
+              <img src={logo} alt="logo" width={150} />
+            </span>
+            {/* <span className="text-2xl text-[#2C4964]">Truesmiles</span> */}
           </Link>
 
           {/* Desktop Navigation */}

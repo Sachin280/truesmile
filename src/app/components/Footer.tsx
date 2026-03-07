@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import logo from "../../assets/Truesmiles.png";
 
 export function Footer() {
   return (
@@ -8,21 +9,24 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl mb-4">Truesmiles</h3>
+            <h3 className="text-2xl mb-4">
+              <img src={logo} alt="logo" width={150} />
+            </h3>
+            {/* <h3 className="text-2xl mb-4">Truesmiles</h3> */}
             <p className="text-gray-300 text-sm mb-4">
               Your trusted partner for comprehensive dental care. We provide exceptional
               service with a gentle touch.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#6BBE44] transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61567881717796#" className="text-gray-300 hover:text-[#6BBE44] transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#6BBE44] transition-colors">
+              <a href="https://www.instagram.com/truesmiles.dentalclinic/?hl=en" className="text-gray-300 hover:text-[#6BBE44] transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#6BBE44] transition-colors">
+              {/* <a href="#" className="text-gray-300 hover:text-[#6BBE44] transition-colors">
                 <Twitter size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -62,12 +66,16 @@ export function Footer() {
           <div>
             <h3 className="text-lg mb-4">Our Services</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>General Dentistry</li>
-              <li>Cosmetic Dentistry</li>
-              <li>Orthodontics</li>
-              <li>Dental Implants</li>
+
+              <li>Orthodontic Care – Braces & Aligners</li>
+              <li>Teeth Cleaning & Gum Care</li>
+              <li>Root Canal Treatment</li>
+              <li>Tooth Extractions</li>
+              <li>Dental Fillings</li>
               <li>Teeth Whitening</li>
-              <li>Emergency Care</li>
+              <li>Smile Designing</li>
+              <li>Crowns & Bridges</li>
+              <li>Pediatric Dentistry</li>
             </ul>
           </div>
 
@@ -90,7 +98,7 @@ export function Footer() {
               <li className="flex items-start gap-2 text-gray-300">
                 <Clock size={18} className="flex-shrink-0 mt-0.5" />
                 <div>
-                  <div>Mon-Fri: 8AM - 6PM</div>
+                  <div>Mon-Fri: 9AM - 6PM</div>
                   <div>Sat: 9AM - 3PM</div>
                   <div>Sun: Closed</div>
                 </div>

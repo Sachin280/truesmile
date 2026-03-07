@@ -4,46 +4,70 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function Home() {
   const services = [
+    // {
+    //   title: "Teeth Whitening",
+    //   description: "Brighten your smile with professional whitening treatments.",
+    //   image: "https://images.unsplash.com/photo-1584516151140-f79fde30d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjB0ZWV0aCUyMHdoaXRlbmluZyUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NzIxMzI2NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    // },
+    {
+      title: "Orthodontic Care – Braces & Aligners",
+      description: "Achieve a perfectly aligned smile with our advanced orthodontic treatments. We offer traditional braces and clear aligners designed to straighten teeth comfortably and effectively for patients of all ages.",
+      image: "https://plus.unsplash.com/premium_photo-1667511022655-00c97e29a32a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8T3J0aG9kb250aWMlMjBDYXJlJTIwJUUyJTgwJTkzJTIwQnJhY2VzJTIwJTI2JTIwQWxpZ25lcnN8ZW58MHx8MHx8fDA%3D",
+      // image: "https://images.unsplash.com/photo-1584516151140-f79fde30d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjB0ZWV0aCUyMHdoaXRlbmluZyUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NzIxMzI2NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    },
+    {
+      title: "Teeth Cleaning & Gum Care",
+      description: "Maintain a healthy smile with our professional teeth cleaning and gum care services. We remove plaque, tartar, and stains while helping prevent gum disease and bad breath.",
+      image: "https://images.unsplash.com/photo-1611690061822-b707a67bfebb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Root Canal Treatment",
+      description: "Save your natural tooth with our safe and painless root canal treatment. Our advanced procedures remove infection from the tooth and restore its strength and function.",
+      image: "https://plus.unsplash.com/premium_photo-1674179075498-0aa74bc607e4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "Tooth Extractions",
+      description: "Tooth Extraction ek dental procedure hai jisme severely damaged, infected, ya problematic tooth ko safely remove kiya jata hai. Jab tooth ko repair karna possible nahi hota, tab extraction oral health ko protect karne ke liye recommended hota hai.",
+      image: "https://plus.unsplash.com/premium_photo-1722873143643-ea42854f97d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
+    {
+      title: "Dental Fillings",
+      description: "Dental Fillings ek common dental treatment hai jo cavities (tooth decay) ko repair karne ke liye use hota hai. Is treatment me dentist tooth ke damaged part ko clean karke us jagah ko special filling material se fill karta hai taaki tooth fir se strong aur functional ho jaye.",
+      image: "https://images.unsplash.com/photo-1655807946138-811bb2340d34?q=80&w=1271&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+
     {
       title: "Teeth Whitening",
-      description: "Brighten your smile with professional whitening treatments.",
-      image: "https://images.unsplash.com/photo-1584516151140-f79fde30d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjB0ZWV0aCUyMHdoaXRlbmluZyUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NzIxMzI2NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    },
-    {
-      title: "Dental Implants",
-      description: "Permanent solution for missing teeth with natural-looking results.",
-      image: "https://images.unsplash.com/photo-1565090567208-c8038cfcf6cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjBpbXBsYW50cyUyMHByb2NlZHVyZXxlbnwxfHx8fDE3NzIxNTY4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    },
-    {
-      title: "Orthodontics",
-      description: "Straighten your teeth with modern braces and aligners.",
-      image: "https://images.unsplash.com/photo-1645118286859-0cf9c5c784b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcnRob2RvbnRpY3MlMjBicmFjZXMlMjBzbWlsZXxlbnwxfHx8fDE3NzIwOTQwODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      description: "Teeth Whitening ek popular cosmetic dental treatment hai jo teeth par pade stains aur discoloration ko remove karke smile ko brighter aur more attractive banata hai.",
+      image: "https://images.unsplash.com/photo-1664529845836-433c172142ca?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
   const features = [
-    "Experienced & Caring Team",
-    "State-of-the-Art Technology",
-    "Comfortable Environment",
-    "Flexible Payment Options",
-    "Emergency Services Available",
-    "Family-Friendly Practice",
+    "MDS Specialist Orthodontist",
+    "Gold Medalist – Academic Excellence",
+    "Advanced Braces & Aligners",
+    "Comprehensive Dental Care",
+    "Patient-Friendly Approach",
+    "Modern Equipment & Sterilization",
   ];
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      text: "The best dental experience I've ever had! The staff is incredibly friendly and professional.",
+      name: "Rohit Sharma",
+      text: "One of the best dental clinics I have visited. The doctor explained the treatment clearly and the staff was very polite and supportive. Highly recommended!”",
       rating: 5,
     },
     {
-      name: "Michael Chen",
-      text: "Dr. Smith and the team made my dental implant procedure smooth and painless. Highly recommend!",
+      name: "Priya Verma",
+      text: "I had severe tooth pain and the team at True Smile Dental Clinic treated it quickly. The root canal treatment was smooth and completely painless.",
       rating: 5,
     },
     {
-      name: "Emily Rodriguez",
-      text: "My kids actually look forward to their dental appointments now. Thank you Truesmiles!",
+      name: "Amit Gupta",
+      text: "Very clean clinic with modern equipment. The dentist made me feel comfortable throughout the treatment. I’m very happy with my smile now.",
       rating: 5,
     },
   ];
@@ -55,19 +79,18 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl mb-6">
-                Your Smile is Our Priority
+              <h1 className="text-4xl lg:text-4xl xl:text-4xl mb-6">
+                Specialist Orthodontic & Comprehensive Dental Care
               </h1>
               <p className="text-lg lg:text-xl text-gray-300 mb-8">
-                Experience exceptional dental care in a comfortable, modern environment. 
-                Our experienced team is dedicated to helping you achieve and maintain a healthy, beautiful smile.
+                Advanced braces, aligners, and complete dental treatments delivered with precision and patient-focused care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
                   className="bg-[#6BBE44] text-white px-8 py-3 rounded-lg hover:bg-[#5aa838] transition-colors inline-flex items-center justify-center gap-2"
                 >
-                  Contact Us
+                  Book Appointment
                   <ArrowRight size={20} />
                 </Link>
                 <Link
@@ -95,11 +118,12 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl text-[#2C4964] mb-4">
-              Why Choose Truesmiles?
+              Why Patients Trust Us
+              {/* Why Choose Truesmiles? */}
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We're committed to providing the highest quality dental care with a personal touch.
-            </p>
+            {/* <p className="text-gray-600 max-w-2xl mx-auto">
+              At TrueSmiles Dental Clinic, we are dedicated to providing high-quality dental care with a compassionate and patient-focused approach. Our goal is to ensure every patient feels comfortable, confident, and well cared for during every visit.
+            </p> */}
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
@@ -122,8 +146,11 @@ export function Home() {
             <h2 className="text-3xl lg:text-4xl text-[#2C4964] mb-4">
               Our Services
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            {/* <p className="text-gray-600 max-w-2xl mx-auto">
               Comprehensive dental care for the whole family.
+            </p> */}
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              At TrueSmiles Dental Clinic, we offer a wide range of modern dental treatments designed to keep your smile healthy, beautiful, and confident. Our experienced dental team uses advanced technology and gentle care to provide the best treatment for every patient.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -162,6 +189,7 @@ export function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Testimonials Section */}
       <section className="py-16 bg-gray-50">

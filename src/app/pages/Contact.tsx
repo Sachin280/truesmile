@@ -81,17 +81,18 @@ export function Contact() {
               <h2 className="text-3xl text-[#2C4964] mb-6">Find Us</h2>
               <div className="bg-gray-200 rounded-xl h-[400px] mb-6 flex items-center justify-center">
                 <div className="text-center text-gray-500">
-                  <MapPin size={48} className="mx-auto mb-2" />
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3182.4298499055985!2d76.61631517548457!3d28.186054175911412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDExJzA5LjgiTiA3NsKwMzcnMDguMCJF!5e1!3m2!1sen!2sin!4v1772863041687!5m2!1sen!2sin" width={600} height={550} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                  {/* <MapPin size={48} className="mx-auto mb-2" />
                   <p className="text-lg mb-2">Our Location</p>
                   <p className="text-sm px-4">
                     95-R, Model Town<br />
                     Rewari, Haryana-123401
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
               {/* Directions Info */}
-              <div className="bg-[#6BBE44] bg-opacity-10 p-6 rounded-lg">
+              {/* <div className="bg-[#6BBE44] bg-opacity-10 mt-4 p-6 rounded-lg">
                 <h3 className="text-xl text-[#2C4964] mb-2">
                   Directions
                 </h3>
@@ -99,7 +100,7 @@ export function Contact() {
                   We are located in Model Town, Rewari. Our clinic is easily accessible
                   from all parts of the city. Call us for detailed directions.
                 </p>
-              </div>
+              </div> */}
             </div>
 
             {/* Contact Details & Additional Info */}
@@ -182,22 +183,37 @@ export function Contact() {
               {
                 question: "Do you accept walk-in appointments?",
                 answer:
-                  "We recommend calling us in advance, but we do our best to accommodate walk-ins based on availability. For emergencies, we always make time.",
+                  "Yes, we accept walk-in appointments whenever possible. However, we recommend scheduling an appointment in advance to reduce waiting time and ensure availability with our dentist",
               },
               {
-                question: "What payment methods do you accept?",
+                question: "What should I bring to my first dental appointment?",
                 answer:
-                  "We accept cash, credit/debit cards, and digital payment methods. Please contact our office for more details about payment options.",
-              },
-              {
-                question: "What should I bring to my first appointment?",
-                answer:
-                  "Please bring a valid ID and any previous dental records or X-rays if available. Also bring a list of any medications you're currently taking.",
+                  "For your first visit, please bring a valid ID proof and any previous dental records or X-rays if available. This helps our dentist understand your dental history and provide better treatment planning.",
               },
               {
                 question: "Do you provide emergency dental care?",
                 answer:
-                  "Yes, we provide emergency dental care during our office hours. Please call us immediately at +91 8397979704 if you have a dental emergency.",
+                  "Yes, True Smile Dental Clinic provides emergency dental care during clinic hours. If you are experiencing severe tooth pain, swelling, or a dental injury, please call us immediately at +91 8397979704 so we can assist you as soon as possible.",
+              },
+              {
+                question: "How often should I visit the dentist?",
+                answer:
+                  "We recommend visiting the dentist every 6 months for routine dental check-ups and professional cleaning to maintain healthy teeth and gums.",
+              },
+              {
+                question: "Are dental treatments painful?",
+                answer:
+                  "Most modern dental treatments are safe and comfortable. We use advanced technology and anesthesia techniques to ensure minimal discomfort during procedures.",
+              },
+              {
+                question: "Do you offer teeth whitening treatments?",
+                answer:
+                  "Yes, we provide professional teeth whitening treatments that safely remove stains and help restore the natural brightness of your smile.",
+              },
+              {
+                question: "Do you treat children?",
+                answer:
+                  "Yes, we offer pediatric dentistry services and provide gentle dental care for children in a friendly and comfortable environment.",
               },
             ].map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
