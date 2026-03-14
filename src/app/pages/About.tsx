@@ -118,7 +118,7 @@ export function About() {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl text-[#2C4964] mb-4">
@@ -148,7 +148,7 @@ export function About() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Statistics Section */}
       <section className="py-16 bg-gradient-to-r from-[#2C4964] to-[#6BBE44] text-white">

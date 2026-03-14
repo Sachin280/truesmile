@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 export function Contact() {
   const contactInfo = [
@@ -20,13 +20,10 @@ export function Contact() {
       link: "mailto:info@truesmiles.in",
     },
     {
-      icon: Clock,
-      title: "Office Hours",
-      details: [
-        "Monday - Friday: 8:00 AM - 6:00 PM",
-        "Saturday: 9:00 AM - 3:00 PM",
-        "Sunday: Closed",
-      ],
+      icon: MessageCircle,
+      title: "Connect With Us",
+      details: ["Chat Now"],
+      link :"https://wa.me/8397979704?text=Hi How Can I Help You",
     },
   ];
 
@@ -54,7 +51,7 @@ export function Contact() {
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
               >
                 <div className="inline-flex items-center justify-center w-14 h-14 bg-[#6BBE44] bg-opacity-10 rounded-full mb-4">
-                  <info.icon className="text-[#6BBE44]" size={24} />
+                  <info.icon className="" size={24} />
                 </div>
                 <h3 className="text-lg text-[#2C4964] mb-3">{info.title}</h3>
                 <div className="space-y-1 text-gray-600 text-sm">
@@ -133,9 +130,9 @@ export function Contact() {
                   <div className="flex items-start gap-3">
                     <Clock className="text-[#6BBE44] flex-shrink-0 mt-1" size={20} />
                     <div className="text-gray-800">
-                      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                      <p>Saturday: 9:00 AM - 3:00 PM</p>
-                      <p>Sunday: Closed</p>
+                      <p>Mon–Sat: 10 AM – 2 PM | 5 PM – 8 PM</p>
+                      <p>Sun: 10 AM – 2 PM</p>
+                      
                     </div>
                   </div>
                 </div>

@@ -10,7 +10,7 @@ export function Footer() {
           {/* About Section */}
           <div>
             <h3 className="text-2xl mb-4">
-              <img src={logo} alt="logo" width={150} />
+              <img src="src/assets/truesmile2.jpeg" alt="logo" width={150} />
             </h3>
             {/* <h3 className="text-2xl mb-4">Truesmiles</h3> */}
             <p className="text-gray-300 text-sm mb-4">
@@ -98,9 +98,8 @@ export function Footer() {
               <li className="flex items-start gap-2 text-gray-300">
                 <Clock size={18} className="flex-shrink-0 mt-0.5" />
                 <div>
-                  <div>Mon-Fri: 9AM - 6PM</div>
-                  <div>Sat: 9AM - 3PM</div>
-                  <div>Sun: Closed</div>
+                  <div>Mon-Sat: 10 AM – 2 PM | 5 PM – 8 PM</div>
+                  <div>Sun: 10 AM - 2 PM</div>
                 </div>
               </li>
             </ul>
